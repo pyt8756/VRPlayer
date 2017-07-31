@@ -75,8 +75,8 @@ public class VRPlayerView extends FrameLayout implements VRMediaController.VRCon
                 .displayMode(MDVRLibrary.DISPLAY_MODE_GLASS)
                 .interactiveMode(MDVRLibrary.INTERACTIVE_MODE_CARDBORAD_MOTION)
                 .projectionMode(MDVRLibrary.PROJECTION_MODE_SPHERE)
-                .pinchEnabled(true)
                 .pinchConfig(new MDPinchConfig().setDefaultValue(0.7f).setMin(0.5f))
+                .pinchEnabled(true)
                 .directorFactory(new MD360DirectorFactory() {
                     @Override
                     public MD360Director createDirector(int index) {

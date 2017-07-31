@@ -143,6 +143,7 @@ public class PlayerView extends FrameLayout
         // REMOVED: mPendingSubtitleTracks = new Vector<Pair<InputStream, MediaFormat>>();
         mCurrentState = STATE_IDLE;
         mTargetState = STATE_IDLE;
+        enableHardwareDecoding();
 
     }
 
@@ -214,7 +215,7 @@ public class PlayerView extends FrameLayout
 
         try {
             mMediaPlayer = new IjkMediaPlayer();
-            enableHardwareDecoding();
+
             // TODO: create SubtitleController in MediaPlayer, but we need
             // a context for the subtitle renderers
             final Context context = getContext();

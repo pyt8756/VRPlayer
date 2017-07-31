@@ -25,7 +25,6 @@
             android:visibility="gone">
 
             <carbon.widget.ImageView
-                android:layout_marginTop="2dp"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:clickable="true"

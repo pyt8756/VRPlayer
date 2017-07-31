@@ -15,23 +15,12 @@
     <com.wheat7.vrplayer.view.BulingBulingTextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="VR Player"
+        android:text="Simple but Powerful Local VR Player"
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="150dp"
         android:layout_centerVertical="true"
         android:textSize="22sp"/>
-
-    <TextView
-        android:text="Simple but powerful"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginBottom="130dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
 
 </layout>
