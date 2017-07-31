@@ -143,8 +143,6 @@ public class PlayerView extends FrameLayout
         // REMOVED: mPendingSubtitleTracks = new Vector<Pair<InputStream, MediaFormat>>();
         mCurrentState = STATE_IDLE;
         mTargetState = STATE_IDLE;
-        enableHardwareDecoding();
-
     }
 
     /**
@@ -215,7 +213,7 @@ public class PlayerView extends FrameLayout
 
         try {
             mMediaPlayer = new IjkMediaPlayer();
-
+            enableHardwareDecoding();
             // TODO: create SubtitleController in MediaPlayer, but we need
             // a context for the subtitle renderers
             final Context context = getContext();
@@ -585,9 +583,14 @@ public class PlayerView extends FrameLayout
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
-        if (isInPlaybackState() && mMediaController != null) {
-            toggleMediaControlsVisiblity();
+
+        switch (ev.getAction()) {
+            case MotionEvent.ACTION_DOWN :
+                if (isInPlaybackState() && mMediaController != null) {
+                    toggleMediaControlsVisiblity();
+                }
         }
+
         return false;
     }
 
