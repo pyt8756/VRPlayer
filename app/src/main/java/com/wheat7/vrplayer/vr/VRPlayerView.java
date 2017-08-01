@@ -133,7 +133,6 @@ public class VRPlayerView extends FrameLayout implements VRMediaController.VRCon
             mVRLibrary.switchDisplayMode(getContext(), MDVRLibrary.DISPLAY_MODE_GLASS);
             mVRLibrary.setAntiDistortionEnabled(true);
         }
-
     }
 
     @Override

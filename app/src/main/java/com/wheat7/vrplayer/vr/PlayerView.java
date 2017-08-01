@@ -778,7 +778,7 @@ public class PlayerView extends FrameLayout
     public boolean isSupportMediaCodecHardDecoder(){
         boolean isHardcode = false;
         //读取系统配置文件/system/etc/media_codecc.xml
-        File file = new File("/system/etc/media_codecs.xml");
+        File file = new File("/system/etc/media_codecsPlayerView.xml");
         InputStream inFile = null;
         try {
             inFile = new FileInputStream(file);

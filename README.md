@@ -2,12 +2,14 @@
 
 ## [中文版点这里](https://github.com/wheat7/VRPlayer/blob/master/README_CN.md)
 
+## [Source analyze](https://github.com/wheat7/VRPlayer/blob/master/README_SOURCE.md)
+
 ![](http://ogzwf5uv0.bkt.clouddn.com/ic_app.png)             
 
 VRPlayer is a simple but powerful local VR video player
        
-![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer2.png)           
-![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer3.png)    
+![](http://ogzwf5uv0.bkt.clouddn.com/1.gif)           
+![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)      
 
 ## InteractiveMode
 * Touch

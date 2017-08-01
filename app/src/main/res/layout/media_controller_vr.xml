@@ -49,6 +49,7 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:thumbTint="#33cc99"
+            android:progressTint="#FFFFFF"
             android:max="1000" />
 
         <LinearLayout

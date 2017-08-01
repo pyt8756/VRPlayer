@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
@@ -29,6 +30,8 @@ import java.util.Locale;
  */
 
 public class VRMediaController extends FrameLayout {
+
+    MediaController mMediaController = new MediaController(getContext());
 
     private final static String TAG = "VRMediaController";
     private static final int FADE_OUT = 1;
