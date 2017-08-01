@@ -6,8 +6,8 @@
 
 VRPlayer VR播放器是一个简单而又强大本地VR视频播放器
        
-![](http://ogzwf5uv0.bkt.clouddn.com/1.gif)           
-![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)    
+![](http://ogzwf5uv0.bkt.clouddn.com/1vr.gif)           
+![](http://ogzwf5uv0.bkt.clouddn.com/2vr.gif)    
 
 ## InteractiveMode
 * Touch

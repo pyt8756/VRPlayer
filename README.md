@@ -4,8 +4,8 @@
 
 ## [Source analyze](http://wheat7.com/2017/06/08/vrplayer-source/)
        
-![](http://ogzwf5uv0.bkt.clouddn.com/1.gif)           
-![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)      
+![](http://ogzwf5uv0.bkt.clouddn.com/1vr.gif)           
+![](http://ogzwf5uv0.bkt.clouddn.com/2vr.gif)      
 
 ## InteractiveMode
 * Touch
