@@ -6,7 +6,7 @@ VRPlayer是一个本地VR视频播放器，整体使用了  DataBinding，MVVM�
 VRPlayer会扫描你手机中的视频文件，然后你可以找到你要播放的VR视频文件，点击即可播放
 # 效果
 ![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer1.gif)           
-![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer2.gif)    
+![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)    
 
 # 分析
 项目主要分三部分,一是重写的MediaController，二就是播放器的包装类，也相当于我们的原生的VideoView,源码中为PlayerView,最后一部分将PlayerView和MD360Player库中的VRLibrary整合包装，也就是源码中的VRPlayerView，实现VR模式控制的接口，在使用的时候就只需要添加这一个View
