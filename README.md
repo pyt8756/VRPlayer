@@ -7,7 +7,7 @@
 ![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer1.gif)           
 ![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)   
 
-⬆️ If you can't see image[Click here](https://github.com/wheat7/VRPlayer/blob/master/README_CN.md)
+⬆️ If you can't see image[Click here](http://wheat7.com/2017/06/08/vrplayer-source/)
 
 ## InteractiveMode
 * Touch
