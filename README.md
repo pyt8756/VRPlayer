@@ -8,8 +8,8 @@
 
 VRPlayer is a simple but powerful local VR video player
        
-![](http://ogzwf5uv0.bkt.clouddn.com/1.gif)           
-![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)      
+![](http://ogzwf5uv0.bkt.clouddn.com/vr1.gif)           
+![](http://ogzwf5uv0.bkt.clouddn.com/vr2.gif)      
 
 ## InteractiveMode
 * Touch
