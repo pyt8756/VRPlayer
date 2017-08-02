@@ -2,12 +2,12 @@
 
 ## [中文版点这里](https://github.com/wheat7/VRPlayer/blob/master/README_CN.md)
 
-## [Source analyze](http://wheat7.com/2017/06/08/vrplayer-source/)
+## [Source analyze](http://www.jianshu.com/p/c7a3b1acb8b1)
        
 ![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer1.gif)           
 ![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)   
 
-⬆️ If you can't see image[Click here](http://wheat7.com/2017/06/08/vrplayer-source/)
+⬆️ If you can't see image[Click here](http://www.jianshu.com/p/c7a3b1acb8b1)
 
 ## InteractiveMode
 * Touch

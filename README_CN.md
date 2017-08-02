@@ -1,6 +1,6 @@
 # VRPlayer
 
-## [源码分析点这里](https://github.com/wheat7/VRPlayer/blob/master/README_SOURCE.md)
+## [源码分析点这里](http://www.jianshu.com/p/c7a3b1acb8b1)
 
 ![](http://ogzwf5uv0.bkt.clouddn.com/ic_app.png)             
 
@@ -9,7 +9,7 @@ VRPlayer VR播放器是一个简单而又强大本地VR视频播放器
 ![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer1.gif)           
 ![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)  
 
-⬆️ 如果你看不到上面的图片[Click here](http://wheat7.com/2017/06/08/vrplayer-source/)  
+⬆️ 如果你看不到上面的图片[Click here](http://www.jianshu.com/p/c7a3b1acb8b1)  
 
 ## InteractiveMode
 * Touch
