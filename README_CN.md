@@ -6,18 +6,17 @@
 
 VRPlayer VR播放器是一个简单而又强大本地VR视频播放器
        
-![](http://ogzwf5uv0.bkt.clouddn.com/vrplayer1.gif)           
-![](http://ogzwf5uv0.bkt.clouddn.com/2.gif)  
+<img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="270" height="486" />   <img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="460" height="270" /> 
 
 ⬆️ 如果你看不到上面的图片[Click here](http://www.jianshu.com/p/c7a3b1acb8b1)  
 
-## InteractiveMode
-* Touch
-* GYROSCOPE
+## Interactive mode
+* Touch mode
+* Gyroscope mode
 
 ## DisplayMode
-* GLASS
-* Eye
+* Glass mode
+* Eye mode
 
 ## 基于以下开源项目实现
 * IJKPlayer
