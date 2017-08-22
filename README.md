@@ -4,7 +4,7 @@
 
 ## [Source analyze](http://www.jianshu.com/p/c7a3b1acb8b1)
        
-<img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="270" height="486" />   <img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="460" height="270" />   
+<img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="270" height="486" />   <img src="/screenshots/vrplayer2.gif" alt="screenshot" title="screenshot" width="460" height="270" />   
 
 ⬆️ If you can't see image[Click here](http://www.jianshu.com/p/c7a3b1acb8b1)
 

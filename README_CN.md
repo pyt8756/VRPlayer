@@ -6,7 +6,7 @@
 
 VRPlayer VR播放器是一个简单而又强大本地VR视频播放器
        
-<img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="270" height="486" />   <img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="460" height="270" /> 
+<img src="/screenshots/vrplayer1.gif" alt="screenshot" title="screenshot" width="270" height="486" />   <img src="/screenshots/vrplayer2.gif" alt="screenshot" title="screenshot" width="460" height="270" /> 
 
 ⬆️ 如果你看不到上面的图片[Click here](http://www.jianshu.com/p/c7a3b1acb8b1)  
 
