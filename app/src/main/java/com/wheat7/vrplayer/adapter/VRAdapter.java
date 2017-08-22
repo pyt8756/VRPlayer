@@ -1,5 +1,6 @@
 package com.wheat7.vrplayer.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import com.wheat7.vrplayer.databinding.ItemVrListBinding;
 import com.wheat7.vrplayer.model.VRVideo;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,10 +26,16 @@ import java.util.List;
 
 public class VRAdapter extends RecyclerView.Adapter<VRAdapter.ViewHolder> {
 
-    private List<VRVideo> mVRVideoList;
+    private List<VRVideo> mVRVideoList = new ArrayList<>();
+    private Context mContext;
 
-    public VRAdapter(List<VRVideo> data) {
+    public VRAdapter(Context context, List<VRVideo> data) {
         this.mVRVideoList = data;
+        this.mContext = context;
+    }
+
+    public VRAdapter(Context context) {
+        mContext = context;
     }
 
     @Override
@@ -46,6 +54,13 @@ public class VRAdapter extends RecyclerView.Adapter<VRAdapter.ViewHolder> {
     @Override
     public int getItemCount() {
         return mVRVideoList.size();
+    }
+
+    public void setVRVideoList(List<VRVideo> VRVideoList) {
+        if (VRVideoList != null && VRVideoList.size() != 0) {
+            mVRVideoList = VRVideoList;
+            notifyDataSetChanged();
+        }
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

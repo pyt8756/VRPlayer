@@ -22,8 +22,11 @@ VRPlayer VR播放器是一个简单而又强大本地VR视频播放器
 ## 基于以下开源项目实现
 * IJKPlayer
 * MD360player4Android 
-* Carbon
 * Glide
+
+## 更新日志
+v1.0(2017-7-31) 初版
+v1.1(2017-8-22) 去除了Carbon UI库的依赖，使用原生UI
 
 ## 你可以在这个项目中学到
 * Databinding

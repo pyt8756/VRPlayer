@@ -28,10 +28,13 @@ import java.util.List;
 
 public class VRListActivity extends BaseActivity<ActivityVrListBinding> implements SwipeRefreshLayout.OnRefreshListener {
     private List<VRVideo> mVRVideoList;
+
     private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE};
 
     private static final int REQUEST_PERMISSIONS = 1;
+
+    private VRAdapter adapter;
 
     @Override
     public int getLayoutId() {
@@ -40,8 +43,11 @@ public class VRListActivity extends BaseActivity<ActivityVrListBinding> implemen
 
     @Override
     public void initView(Bundle savedInstanceState) {
-        checkPermission();
         getBinding().swipeRefresh.setOnRefreshListener(this);
+        adapter = new VRAdapter(this);
+        getBinding().recycler.setLayoutManager(new LinearLayoutManager(this));
+        getBinding().recycler.setAdapter(adapter);
+        checkPermission();
     }
 
 
@@ -108,10 +114,7 @@ public class VRListActivity extends BaseActivity<ActivityVrListBinding> implemen
             mVRVideoList.add(mVRVideo);
         }
         cursor.close();
-        VRAdapter adapter = new VRAdapter(mVRVideoList);
-        getBinding().recycler.setLayoutManager(new LinearLayoutManager(this));
-        getBinding().recycler.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
+        adapter.setVRVideoList(mVRVideoList);
         getBinding().swipeRefresh.setRefreshing(false);
     }
 }

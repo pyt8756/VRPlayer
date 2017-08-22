@@ -9,19 +9,21 @@
 
 ⬆️ If you can't see image[Click here](http://www.jianshu.com/p/c7a3b1acb8b1)
 
-## InteractiveMode
-* Touch
-* GYROSCOPE
+## Interactive mode
+* Touch mode
+* Gyroscope mode
 
 ## DisplayMode
-* GLASS
-* Eye
+* Glass mode
+* Eye mode
     
+## Update
+v1.0(2017-7-31) 
+v1.1(2017-8-22) Remove Carbon and use native SDK UI
 
 ## BaseOn
 * IJKPlayer
 * MD360player4Android 
-* Carbon
 * Glide
 * StatusBarUtil
 

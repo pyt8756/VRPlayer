@@ -221,7 +221,7 @@ public class PlayerView extends FrameLayout
 
             // REMOVED: mAudioSession
             //add
-            if (mSurfaceHolder != null){
+            if (mSurfaceHolder != null) {
 
                 mMediaPlayer.setDisplay(mSurfaceHolder);
             }
@@ -243,7 +243,7 @@ public class PlayerView extends FrameLayout
 //            }  else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
 //                mMediaPlayer.setDataSource(mAppContext, mUri, mHeaders);
 //            } else {
-                mMediaPlayer.setDataSource(mUri.toString());
+            mMediaPlayer.setDataSource(mUri.toString());
 //            }
             mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
             mMediaPlayer.setScreenOnWhilePlaying(true);
@@ -328,21 +328,21 @@ public class PlayerView extends FrameLayout
             if (mVideoWidth != 0 && mVideoHeight != 0) {
                 //Log.i("@@@@", "video size: " + mVideoWidth +"/"+ mVideoHeight);
                 // REMOVED: getHolder().setFixedSize(mVideoWidth, mVideoHeight);
-                    if ( mSurfaceWidth == mVideoWidth && mSurfaceHeight == mVideoHeight) {
-                        // We didn't actually change the size (it was already at the size
-                        // we need), so we won't get a "surface changed" callback, so
-                        // start the video here instead of in the callback.
-                        if (mTargetState == STATE_PLAYING) {
-                            start();
-                            if (mMediaController != null) {
-                                mMediaController.show();
-                            }
-                        } else if (!isPlaying() &&
-                                (seekToPosition != 0 || getCurrentPosition() > 0)) {
-                            if (mMediaController != null) {
-                                // Show the media controls when we're paused into a video and make 'em stick.
-                                mMediaController.show(0);
-                            }
+                if (mSurfaceWidth == mVideoWidth && mSurfaceHeight == mVideoHeight) {
+                    // We didn't actually change the size (it was already at the size
+                    // we need), so we won't get a "surface changed" callback, so
+                    // start the video here instead of in the callback.
+                    if (mTargetState == STATE_PLAYING) {
+                        start();
+                        if (mMediaController != null) {
+                            mMediaController.show();
+                        }
+                    } else if (!isPlaying() &&
+                            (seekToPosition != 0 || getCurrentPosition() > 0)) {
+                        if (mMediaController != null) {
+                            // Show the media controls when we're paused into a video and make 'em stick.
+                            mMediaController.show(0);
+                        }
                     }
                 }
             } else {
@@ -585,7 +585,7 @@ public class PlayerView extends FrameLayout
     public boolean onTouchEvent(MotionEvent ev) {
 
         switch (ev.getAction()) {
-            case MotionEvent.ACTION_DOWN :
+            case MotionEvent.ACTION_DOWN:
                 if (isInPlaybackState() && mMediaController != null) {
                     toggleMediaControlsVisiblity();
                 }
@@ -699,7 +699,7 @@ public class PlayerView extends FrameLayout
     public void seekTo(long msec) {
         if (isInPlaybackState()) {
             mSeekStartTime = System.currentTimeMillis();
-            mMediaPlayer.seekTo((int)msec);
+            mMediaPlayer.seekTo((int) msec);
             mSeekWhenPrepared = 0;
         } else {
             mSeekWhenPrepared = msec;
@@ -763,8 +763,8 @@ public class PlayerView extends FrameLayout
     }
 
     // enableHardwareDecoding
-    private void enableHardwareDecoding(){
-        if (mMediaPlayer instanceof IjkMediaPlayer){
+    private void enableHardwareDecoding() {
+        if (mMediaPlayer instanceof IjkMediaPlayer) {
             IjkMediaPlayer player = (IjkMediaPlayer) mMediaPlayer;
             player.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "mediacodec", 1);
             player.setOption(IjkMediaPlayer.OPT_CATEGORY_PLAYER, "mediacodec-auto-rotate", 1);
@@ -775,7 +775,7 @@ public class PlayerView extends FrameLayout
         }
     }
 
-    public boolean isSupportMediaCodecHardDecoder(){
+    public boolean isSupportMediaCodecHardDecoder() {
         boolean isHardcode = false;
         //读取系统配置文件/system/etc/media_codecc.xml
         File file = new File("/system/etc/media_codecsPlayerView.xml");
@@ -786,7 +786,7 @@ public class PlayerView extends FrameLayout
             // TODO: handle exception
         }
 
-        if(inFile != null) {
+        if (inFile != null) {
             XmlPullParserFactory pullFactory;
             try {
                 pullFactory = XmlPullParserFactory.newInstance();
@@ -800,10 +800,8 @@ public class PlayerView extends FrameLayout
                             if ("MediaCodec".equals(tagName)) {
                                 String componentName = xmlPullParser.getAttributeValue(0);
 
-                                if(componentName.startsWith("OMX."))
-                                {
-                                    if(!componentName.startsWith("OMX.google."))
-                                    {
+                                if (componentName.startsWith("OMX.")) {
+                                    if (!componentName.startsWith("OMX.google.")) {
                                         isHardcode = true;
                                     }
                                 }
@@ -827,7 +825,7 @@ public class PlayerView extends FrameLayout
         mSurfaceView.getHolder().addCallback(new SurfaceCallBack());
     }
 
-    public class SurfaceCallBack implements SurfaceHolder.Callback{
+    public class SurfaceCallBack implements SurfaceHolder.Callback {
         @Override
         public void surfaceCreated(SurfaceHolder holder) {
             mSurfaceHolder = holder;
@@ -839,7 +837,7 @@ public class PlayerView extends FrameLayout
             {
                 mSurfaceWidth = width;
                 mSurfaceHeight = height;
-                boolean isValidState =  (mTargetState == STATE_PLAYING);
+                boolean isValidState = (mTargetState == STATE_PLAYING);
                 boolean hasValidSize = (mVideoWidth == width && mVideoHeight == height);
                 if (mMediaPlayer != null && isValidState && hasValidSize) {
                     if (mSeekWhenPrepared != 0) {
