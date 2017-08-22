@@ -19,6 +19,7 @@
     
 ## Update
 v1.0(2017-7-31) 
+
 v1.1(2017-8-22) Remove Carbon and use native SDK UI
 
 ## BaseOn
