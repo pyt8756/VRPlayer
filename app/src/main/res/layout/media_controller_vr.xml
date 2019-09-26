@@ -38,7 +38,7 @@
             android:layout_toLeftOf="@+id/mediacontroller_handlerLayout"
             android:layout_marginRight="5dp" />
 
-        <android.support.v7.widget.AppCompatSeekBar
+        <androidx.appcompat.widget.AppCompatSeekBar
             android:id="@+id/mediacontroller_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
